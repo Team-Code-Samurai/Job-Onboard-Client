@@ -38,39 +38,39 @@ const Navbar = () => {
   const NavbarMenus = (
     <>
       <li className="py-1 lg:py-0">
-        <NavLink className="uppercase" to="/jobs">
+        <NavLink className="uppercase" to="/jobs" onClick={() => {window.scrollTo(0, 0)}}>
           Find Jobs
         </NavLink>
       </li>
       <li className="py-1 lg:py-0">
-        <NavLink className="uppercase" to="/blog">
+        <NavLink className="uppercase" to="/blog" onClick={() => {window.scrollTo(0, 0)}}>
           Blog
         </NavLink>
       </li>
       <li className="py-1 lg:py-0">
-        <NavLink className="uppercase" to="/applicant-tracking">
+        <NavLink className="uppercase" to="/applicant-tracking" onClick={() => {window.scrollTo(0, 0)}}>
           Tracking System
         </NavLink>
       </li>
-      <li className="py-1 lg:py-0">
+      {/* <li className="py-1 lg:py-0">
         <NavLink className="uppercase" to="/pricing">
           Pricing
         </NavLink>
-      </li>
+      </li> */}
       <li className="py-1 lg:py-0">
-        <NavLink className="uppercase" to="/about">
+        <NavLink className="uppercase" to="/about" onClick={() => {window.scrollTo(0, 0)}}>
           About
         </NavLink>
       </li>
 
       <li className="py-1 lg:py-0">
-        <NavLink className="uppercase" to="/contact-us">
+        <NavLink className="uppercase" to="/contact-us" onClick={() => {window.scrollTo(0, 0)}}>
           Contact Us
         </NavLink>
       </li>
       {!user && (
-        <li className="py-1 lg:py-0">
-          <Link to="/login" className="uppercase bg-secondary text-white">
+        <li className="py-1 lg:py-0" >
+          <Link to="/login" className="uppercase bg-secondary text-white" onClick={() => {window.scrollTo(0, 0)}}>
             <BiLogInCircle /> Login
           </Link>
         </li>
@@ -129,7 +129,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="flex justify-center items-center">
-              <Link to="/" className="inline-flex items-center mr-8">
+              <Link to="/" className="inline-flex items-center mr-8" onClick={() => {window.scrollTo(0, 0)}}>
                 {!user ? (
                   <img
                     src={logo}

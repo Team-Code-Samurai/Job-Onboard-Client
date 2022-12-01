@@ -25,7 +25,7 @@ const ContactUs = () => {
             <div className='flex justify-center'> <img className='w-12 h-12' src={mail} alt="" /> </div>
             <p className="text-sm font-bold my-3">Contact Customer Support</p>
             <p className='text-sm my-3'>Sometimes you need a little help from your friends. Or a Job Onboard Support rep. Don't worry... we're here for you.</p>
-            <Link to='/contact-us'>
+            <Link to='/contact-us' onClick={() => {window.scrollTo(0, 0)}}>
               <button className='p-5 bg-orange-500 my-5 rounded-lg text-white text-sm'>Contact Support</button>
             </Link>
           </div>

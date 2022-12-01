@@ -83,7 +83,7 @@ function App() {
           <Route path="/blog/:blogId" element={<BlogsDetail />}></Route>
           <Route path="contact-us" element={<Contact />}></Route>
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/pricing" element={<Pricing />} />
+          {/* <Route path="/pricing" element={<Pricing />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/signUp/hr" element={<SignUpForHrManager />} />

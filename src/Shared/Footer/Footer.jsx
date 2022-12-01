@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  
+
   return (
     <div className="bg-base-300">
       <footer className="pt-20 pb-10 lg:px-8 container mx-auto text-center ">
@@ -58,6 +60,7 @@ const Footer = () => {
             <p>
               <Link
                 to="/blog"
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Blog{" "}
@@ -66,6 +69,7 @@ const Footer = () => {
             <p>
               <Link
                 to="/jobs"
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Find Jobs
@@ -74,6 +78,7 @@ const Footer = () => {
             <p>
               <Link
                 to="/contact-us#team"
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Our Team
@@ -81,7 +86,8 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/about"
+                to="/about" 
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 About Us
@@ -91,7 +97,8 @@ const Footer = () => {
           <div className="space-y-2 lg:my-2">
             <p>
               <Link
-                to="/pricing"
+                to="/pricing" 
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Our Pricing{" "}
@@ -100,6 +107,7 @@ const Footer = () => {
             <p>
               <Link
                 to="/partner"
+                onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 {" "}
@@ -108,7 +116,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/contact-us"
+                to="/contact-us" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Contact Us
@@ -116,7 +124,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/applicant-tracking"
+                to="/applicant-tracking" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Tracking System
@@ -126,7 +134,7 @@ const Footer = () => {
           <div className="space-y-2 my-10 lg:my-2">
             <p>
               <Link
-                to="/guide"
+                to="/guide" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Guide Lines
@@ -134,7 +142,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/success"
+                to="/success" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Our History
@@ -142,7 +150,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/strategy"
+                to="/strategy" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 User Strategy
@@ -150,7 +158,7 @@ const Footer = () => {
             </p>
             <p>
               <Link
-                to="/trust-safety"
+                to="/trust-safety" onClick={() => {window.scrollTo(0, 0)}}
                 className="link link-hover hover:text-primary text-lg"
               >
                 Trust and Safety{" "}
